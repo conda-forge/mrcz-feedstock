@@ -23,7 +23,7 @@ requirements:
   run:
     - python
     - numpy
-    - blosc
+    - python-blosc
     - futures  # [py2k]
 
 test:
