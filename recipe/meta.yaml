@@ -1,6 +1,6 @@
 {% set name = "mrcz" %}
-{% set version = "0.5.3" %}
-{% set sha256 = "f91dadf0f4e40079774faa25e04d7ef8e0fb4d40b601932e6edee1a5410b21ce" %}
+{% set version = "0.5.4" %}
+{% set sha256 = "5a6bcbc838f0c970b895465b28017e830acdf689c7dc6a91b53b25129c2a4f75" %}
 
 package:
   name: {{ name|lower }}
