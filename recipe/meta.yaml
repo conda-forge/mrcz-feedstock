@@ -12,7 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  noarch: python
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
@@ -24,8 +25,6 @@ requirements:
     - python
     - numpy
     - python-blosc >=1.4
-    - enum34   # [py<34]
-    - futures  # [py<30]
 
 test:
   imports:
