@@ -1,6 +1,6 @@
 {% set name = "mrcz" %}
-{% set version = "0.5.6" %}
-{% set sha256 = "d3b771d6b820468b4b521c97ddd13d8a13e6217a8f32c958aaac034b667715f5" %}
+{% set version = "0.5.7" %}
+{% set sha256 = "77aa30bcd81afb5382f6b76598226bee69f407415c871cbbd03eb4f63abdb658" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
