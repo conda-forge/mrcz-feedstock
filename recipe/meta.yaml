@@ -1,6 +1,6 @@
 {% set name = "mrcz" %}
-{% set version = "0.5.6" %}
-{% set sha256 = "d3b771d6b820468b4b521c97ddd13d8a13e6217a8f32c958aaac034b667715f5" %}
+{% set version = "0.5.10" %}
+{% set sha256 = "e035727635656086aecc411af921f104ecfc725992102a8ce24bc30e96ea8323" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
